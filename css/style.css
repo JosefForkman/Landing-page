@@ -1,3 +1,8 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
 :root {
   --red: #d76978;
   --blue: #85a1c2;
@@ -16,7 +21,9 @@ body {
 }
 
 h1 {
-  font: bold, 2.5rem, var(--roboto);
+  font-size: 2.5rem;
+  font-family: var(--roboto);
+  font-weight: bold;
 }
 
 h2 {
@@ -26,4 +33,30 @@ h2 {
 
 h3 {
   font: bold, 1rem, var(--fuzzy-bubbles);
+}
+
+
+/* Fotter */
+footer {
+    position: relative;
+}
+footer nav {
+    position: absolute;
+    right: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 50px;
+}
+footer nav ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+footer nav ul li a {
+    font-family: var(--roboto);
+    text-decoration: none;
+}
+footer i {
+    font-size: 1.5rem;
+    color: var(--red);
 }
