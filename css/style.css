@@ -17,6 +17,7 @@ body {
 
 h1 {
   font: bold, 2.5rem, var(--roboto);
+  rotate: 90deg;
 }
 
 h2 {
