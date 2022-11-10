@@ -25,7 +25,9 @@ h1 {
   font-size: 2.5rem;
   font-family: var(--roboto);
   font-weight: bold;
-  transform: rotateZ(-90deg)
+  transform-origin: top left;
+  transform: translateX(90%) rotateZ(90deg);
+  height: 50vh;
 }
 
 h2 {
@@ -37,9 +39,35 @@ h3 {
   font: bold, 1rem, var(--fuzzy-bubbles);
 }
 
+.fixPaageMargin {
+    padding-inline: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
 nav ul li a {
     font-family: var(--roboto);
     text-decoration: none;
+    color: #000;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 29px;
+    background-image: url(../image/blob.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 20px;
+}
+
+header nav {
+    grid-column: 1 / -1;
+    justify-self: center;
 }
 
 
@@ -53,11 +81,6 @@ footer nav {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 50px;
-}
-footer nav ul {
-    display: flex;
-    list-style: none;
-    gap: 8px;
 }
 footer i {
     font-size: 1.5rem;
