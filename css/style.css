@@ -31,12 +31,16 @@ h1 {
 }
 
 h2 {
-  font: bold, 1.5rem, var(--roboto);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: var(--roboto);
   color: var(--red);
 }
 
 h3 {
-  font: bold, 1rem, var(--fuzzy-bubbles);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--fuzzy-bubbles);
 }
 
 .fixPaageMargin {
@@ -70,19 +74,34 @@ header nav {
     justify-self: center;
 }
 
+/* Card */
+
+
 
 /* Fotter */
 footer {
     position: relative;
+    background-image: url(../image/blob2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 300px;
 }
 footer nav {
     position: absolute;
+    bottom: 20px;
     right: 1.5rem;
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 50px;
 }
-footer i {
+footer nav ul {
+    justify-self: end;
+}
+footer nav .social {
+    display: flex;
+    gap: 16px;
+}
+footer nav .social i {
     font-size: 1.5rem;
     color: var(--red);
 }
