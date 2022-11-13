@@ -26,8 +26,10 @@ h1 {
   font-family: var(--roboto);
   font-weight: bold;
   transform-origin: top left;
-  transform: translateX(90%) rotateZ(90deg);
-  height: 50vh;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  rotate: 180deg;
+  transform-origin: center;
 }
 
 h2 {
@@ -70,10 +72,30 @@ header nav {
     justify-self: center;
 }
 
+/* Service */
+.sertvice {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 32px;
+  overflow: auto;
+}
+
+.sertvice .deliviry {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.sertvice .deliviry p {
+  display: block;
+}
 
 /* Fotter */
 footer {
     position: relative;
+    background-image: url(../image/blob2.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 260px;
 }
 footer nav {
     position: absolute;
