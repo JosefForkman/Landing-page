@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 :root {
   --red: #d76978;
@@ -10,10 +11,6 @@
 
   --roboto: "Roboto", sans-serif;
   --fuzzy-bubbles: "Fuzzy Bubbles", cursive;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
@@ -102,19 +99,28 @@ footer nav {
 /* Service */
 .sertvice {
   grid-column: 1 / -1;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   overflow: auto;
+  width: calc(100vw - 48px);
 }
 
 .sertvice .deliviry {
   display: grid;
   grid-template-columns: auto 1fr;
+  gap: 16px;
 }
 
 .sertvice .deliviry p {
-  display: block;
+  grid-column: 2 / -1;
+  font-family: var(--roboto);
+}
 
+.sertvice .deliviry i {
+    grid-row: 1 / -3;
+    align-self: center;
+    color: var(--red);
 }
 
 footer nav ul {
