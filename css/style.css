@@ -76,22 +76,7 @@ header nav {
     justify-self: center;
 }
 
-/* Service */
-.sertvice {
-  grid-column: 1 / -1;
-  display: flex;
-  gap: 32px;
-  overflow: auto;
-}
 
-.sertvice .deliviry {
-  display: grid;
-  grid-template-columns: auto 1fr;
-}
-
-.sertvice .deliviry p {
-  display: block;
-}
 /* Card */
 
 
@@ -99,6 +84,11 @@ header nav {
 /* Fotter */
 footer {
     position: relative;
+    background-image: url(../image/blob2.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    height: 260px;
 }
 footer nav {
     position: absolute;
