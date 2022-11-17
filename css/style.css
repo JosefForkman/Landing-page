@@ -29,7 +29,7 @@ body {
 }
 
 main {
-  margin: 0 1.5rem;
+  /* margin: 0 1.5rem; */
   font-family: var(--roboto);
 }
 
@@ -71,9 +71,9 @@ h3 {
   font-family: var(--roboto);
 }
 
-/* .fixPaageMargin {
+.fixPaageMargin {
   padding-inline: 24px;
-} */
+}
 
 nav ul {
   display: flex;
