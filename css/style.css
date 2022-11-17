@@ -68,7 +68,7 @@ h2 {
 h3 {
   font-size: 1rem;
   font-weight: bold;
-  font-family: var(--fuzzy-bubbles);
+  font-family: var(--roboto);
 }
 
 /* .fixPaageMargin {
@@ -135,12 +135,17 @@ header nav {
   overflow: hidden;
   grid-template: 80% 20% / 1fr 5fr;
   margin-bottom: 1rem;
+  height: 20rem;
 }
 
 .hero img {
   margin: auto;
   height: 100%;
-  width: 100%;
+  width: 70%;
+}
+
+.hero h1 {
+  margin: auto;
 }
 
 .hero-message-container {
@@ -253,7 +258,7 @@ header nav {
 
 .about .card {
   color: #fff;
-  padding: 0.5rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   background-color: var(--blue);
 }
