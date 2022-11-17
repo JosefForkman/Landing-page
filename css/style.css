@@ -8,6 +8,7 @@
   --red: #d76978;
   --blue: #85a1c2;
   --yellow: #e7d372;
+  --light-yellow: #efe19f;
 
   --roboto: "Roboto", sans-serif;
   --fuzzy-bubbles: "Fuzzy Bubbles", cursive;
@@ -231,6 +232,14 @@ header nav {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, .35);
   border-radius: 0.5rem;
   height: 2.75rem;
+  cursor: pointer;
+  transition: .2s;
+}
+.deals .item a:hover {
+  background-color: var(--light-yellow);
+}
+.deals .item a:active {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, .35);
 }
 
 /* review section */
