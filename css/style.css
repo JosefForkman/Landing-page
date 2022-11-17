@@ -215,6 +215,7 @@ header nav {
   align-items: center;
   margin-right: 1rem;
   height: 12.5rem;
+  scroll-snap-align: end;
 }
 
 .deals .item img {
