@@ -144,7 +144,6 @@ header nav {
 .hero img {
   margin: auto;
   height: 100%;
-  width: 70%;
 }
 
 .hero h1 {
@@ -299,10 +298,8 @@ header nav {
 
 /* Card */
 .about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 24px;
-  row-gap: 14px;
+  display: flex;
+  gap: 1.5rem;
   margin-bottom: 3rem;
 }
 
@@ -315,6 +312,7 @@ header nav {
   padding: 1.3rem;
   border-radius: 0.5rem;
   background-color: var(--blue);
+  max-height: 17rem;
 }
 
 .about .card h3 {
@@ -324,6 +322,16 @@ header nav {
 
 .about .card p {
   font-size: 1rem;
+}
+
+.about-img {
+  max-height: 17rem;
+}
+
+@media screen and (max-width: 800px) {
+  .about-img {
+    display: none;
+  }
 }
 
 /* Fotter */
