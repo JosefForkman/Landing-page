@@ -79,7 +79,7 @@ h3 {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 nav ul li a {
   font-family: var(--roboto);
@@ -89,19 +89,15 @@ nav ul li a {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  row-gap: 29px;
-  /* background-image: url(../image/blob.svg);
-  background-repeat: no-repeat;
-  background-position: top right; */
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 header nav {
-  grid-column: 1 / -1;
-  justify-self: center;
+  display: flex;
 }
 
 /* hero section */
@@ -135,7 +131,7 @@ header nav {
   display: grid;
   overflow: hidden;
   grid-template: 80% 20% / 1fr 5fr;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   height: 20rem;
 }
 
@@ -207,7 +203,7 @@ header nav {
 
 /* deals section */
 .deals {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .deals .item {
@@ -229,29 +225,29 @@ header nav {
   align-items: center;
   padding: 0 1rem;
   background-color: var(--yellow);
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, .35);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
   border-radius: 0.5rem;
   height: 2.75rem;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 .deals .item a:hover {
   background-color: var(--light-yellow);
 }
 .deals .item a:active {
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, .35);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.35);
 }
 
 /* review section */
 .reviews {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .carousel {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  width: 90vw;
+  width: 94vw;
   padding-bottom: 8px;
 }
 
@@ -264,7 +260,6 @@ header nav {
   scroll-snap-align: start;
   margin-right: 0.5rem;
   padding: 0.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .reviews h2 {
