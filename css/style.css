@@ -151,7 +151,7 @@ header nav {
   overflow: hidden;
   grid-template: 80% 20% / 1fr 5fr;
   margin-bottom: 3rem;
-  height: 20rem;
+  height: 26rem;
 }
 
 .hero img {
@@ -208,6 +208,7 @@ header nav {
 @media screen and (min-width: 800px) {
   .hero {
     grid-template: 80% 20% / 1fr 3fr 3fr;
+    gap: 1rem;
   }
 
   .hero-message-container {
