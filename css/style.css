@@ -156,7 +156,7 @@ header nav {
 
 .hero img {
   margin: auto;
-  height: 100%;
+  height: 90%;
 }
 
 .hero h1 {
@@ -212,6 +212,12 @@ header nav {
   }
 
   .hero-message-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-message-desktop {
     display: none;
   }
 }
