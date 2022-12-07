@@ -37,6 +37,7 @@ main {
 .top-blob {
   position: absolute;
   z-index: -1;
+  top: 0;
   right: 0;
 }
 
@@ -51,6 +52,9 @@ main {
   .top-blob,
   .bottom-blob {
     width: 50%;
+  }
+  .top-blob {
+    top: -10%;
   }
 }
 
@@ -89,17 +93,12 @@ h3 {
   padding-inline: 1.5rem;
 }
 
-@media screen and (min-width: 700px) {
-  .fixPagePadding {
-    padding-inline: 3rem;
-  }
-}
-
 nav ul {
   display: flex;
   list-style: none;
   gap: 1rem;
 }
+
 nav ul li a {
   font-family: var(--roboto);
   font-size: 1rem;
@@ -117,6 +116,25 @@ header {
 
 header nav {
   display: flex;
+}
+
+@media screen and (min-width: 700px) {
+  .fixPagePadding {
+    padding-inline: 3rem;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+  }
+
+  nav ul li a {
+    font-family: var(--roboto);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+  }
 }
 
 /* hero section */
@@ -267,12 +285,6 @@ header nav {
   padding-bottom: 8px;
 }
 
-@media screen and (min-width: 700px) {
-  .deals-carousel {
-    justify-content: center;
-  }
-}
-
 .deals .item {
   display: flex;
   flex-direction: column;
@@ -303,6 +315,16 @@ header nav {
 }
 .deals .item a:active {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.35);
+}
+
+@media screen and (min-width: 700px) {
+  .deals-carousel {
+    justify-content: center;
+  }
+
+  .deals .item {
+    height: 25rem;
+  }
 }
 
 /* review section */
@@ -342,6 +364,12 @@ header nav {
   .reviews-carousel {
     max-width: 85vw;
   }
+  .reviews {
+    margin: 3rem;
+  }
+  .review {
+    width: 18rem;
+  }
 }
 
 /* Card */
@@ -374,11 +402,18 @@ header nav {
 
 .about-img {
   max-height: 17rem;
+  display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 700px) {
+  .about {
+    margin: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
   .about-img {
-    display: none;
+    display: block;
   }
 }
 
