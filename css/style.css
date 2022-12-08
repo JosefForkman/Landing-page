@@ -167,14 +167,17 @@ header nav {
 .hero {
   display: grid;
   overflow: hidden;
-  grid-template: 80% 20% / 1fr 5fr;
+  /* grid-template: 80% 20% / 1fr 5fr; */
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 5fr 1fr;
   margin-bottom: 3rem;
   height: 26rem;
 }
 
 .hero img {
   margin: auto;
-  height: 90%;
+  /* height: 90%; */
+  height: 230px;
 }
 
 .hero h1 {
