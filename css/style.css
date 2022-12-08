@@ -494,6 +494,7 @@ footer nav {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 50px;
+  align-items: center;
   padding-bottom: 1rem;
 }
 
@@ -508,13 +509,23 @@ footer nav .social {
 }
 
 footer nav .social i {
-  font-size: 1.5rem;
+  font-size: 17px;
   color: var(--red);
 }
 
 @media screen and (min-width: 700px) {
   footer nav ul {
     justify-self: center;
-    position: absolute;
+    /* position: absolute; */
   }
+  footer nav .social i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  footer nav .social i {
+    font-size: 60px;
+  }
+  
 }
