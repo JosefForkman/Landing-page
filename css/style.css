@@ -167,7 +167,7 @@ nav ul li a {
 
 .hero {
   display: grid;
-  /* overflow: hidden; */
+  overflow: hidden;
   /* grid-template: 80% 20% / 1fr 5fr; */
   grid-template-columns: auto 1fr;
   grid-template-rows: 5fr 1fr;
@@ -408,7 +408,6 @@ nav ul li a {
 .about {
   display: grid;
   grid-template-columns: 1fr auto;
-  
 }
 
 .about h2 {
@@ -447,7 +446,6 @@ nav ul li a {
   max-height: 17rem;
   display: none;
 }
- 
 
 @media screen and (min-width: 700px) {
   .about {
@@ -468,7 +466,7 @@ nav ul li a {
     width: 75vw;
     column-gap: 24px;
   }
-  
+
   .about-us {
     flex-direction: row;
   }
@@ -527,5 +525,4 @@ footer nav .social i {
   footer nav .social i {
     font-size: 60px;
   }
-  
 }
