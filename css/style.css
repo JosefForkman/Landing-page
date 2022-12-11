@@ -428,7 +428,7 @@ nav ul li a {
 .about .card {
   color: #fff;
   /* background-color: var(--blue); */
-  max-height: 17rem;
+  /* max-height: 17rem; */
 }
 
 .about .card h3 {
@@ -449,7 +449,7 @@ nav ul li a {
 
 @media screen and (min-width: 700px) {
   .about {
-    margin: 3rem;
+    margin-block: 3rem;
   }
   .about h2 {
     margin-bottom: 1rem;
@@ -463,19 +463,26 @@ nav ul li a {
 
 @media screen and (min-width: 900px) {
   .about {
-    width: 75vw;
     column-gap: 24px;
   }
 
   .about-us {
     flex-direction: row;
+    background-color: transparent;
+    padding: 0;
   }
   .about-img {
     display: block;
     height: 320px;
   }
   .about .card {
-    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--blue);
+    padding: 1.3rem;
+    border-radius: .5em;
+    max-width: 425px;
   }
 }
 
