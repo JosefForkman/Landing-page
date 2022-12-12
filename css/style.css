@@ -99,7 +99,7 @@ header {
   justify-content: center;
   margin: auto;
   padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 
 header nav {
@@ -232,6 +232,7 @@ nav ul li a {
   .hero {
     grid-template: 80% 20% / 1fr 3fr 3fr;
     gap: 1rem;
+    margin-bottom: 5rem;
   }
 
   .hero h1 {
@@ -398,6 +399,7 @@ nav ul li a {
   }
   .reviews {
     margin: 3rem;
+    margin-bottom: 5rem;
   }
   .review {
     width: 18rem;
@@ -449,7 +451,7 @@ nav ul li a {
 
 @media screen and (min-width: 700px) {
   .about {
-    margin-block: 3rem;
+    margin: 3rem;
   }
   .about h2 {
     margin-bottom: 1rem;
@@ -481,7 +483,7 @@ nav ul li a {
     gap: 1em;
     background-color: var(--blue);
     padding: 1.3rem;
-    border-radius: .5em;
+    border-radius: 0.5em;
     max-width: 425px;
   }
 }
